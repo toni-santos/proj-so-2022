@@ -1,7 +1,7 @@
 # Projeto de SOPE
 
 Contributors:
-> Luís Osório
-> António Santos
-> Pedro Silva
-> Pedro Nunes
+> Luís Osório <br>
+> António Santos <br>
+> Pedro Silva <br>
+> Pedro Nunes <br>
