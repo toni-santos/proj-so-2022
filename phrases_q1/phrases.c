@@ -75,7 +75,7 @@ int print_phrases(char** argv, int lines) {
             continue;
         }
 
-        if (lines) {
+        if (lines && curr_char != '\n') {
             putchar(curr_char);
         }
 
