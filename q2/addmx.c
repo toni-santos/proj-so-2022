@@ -46,14 +46,14 @@ void add_matrices(const char* mx1, const char* mx2) {
 
     result = (int**)mmap(NULL, sizeof(int*) * d.rows, PROT_READ | PROT_WRITE, MAP_SHARED | 0x20, 0, 0);
     if (result == MAP_FAILED) {
-        fprintf(stderr, "mmap() failed #1, exiting...\n");
+        fprintf(stderr, "mmap() #1 failed, exiting...\n");
         exit(-1);
     }
 
     for (int i = 0; i < d.rows; i++) {
         result[i] = (int*)mmap(NULL, sizeof(int) * d.columns, PROT_READ | PROT_WRITE, MAP_SHARED | 0x20, 0, 0);
         if (result[i] == MAP_FAILED) {
-            fprintf(stderr, "mmap() failed #2, exiting...\n");
+            fprintf(stderr, "mmap() #2 failed, exiting...\n");
             exit(-1);
         }
     }
